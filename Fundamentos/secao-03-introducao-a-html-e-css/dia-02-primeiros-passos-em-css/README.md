@@ -1,0 +1,1 @@
+exercios do dia 02
