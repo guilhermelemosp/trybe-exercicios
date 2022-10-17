@@ -1,0 +1,27 @@
+ol {background-color: yellow;}
+
+.itens-pares {color: green;}
+
+.text-transform {text-transform: uppercase;}
+
+.headers {color: red;}
+
+.headers em {font-size: 40px; border: 1px solid black;}
+
+li {font-size: 20px;}
+
+li em {font-weight: bolder;}
+
+.programacao-azul {color: blue;}
+
+.java-rosa {background-color: pink;
+width: fit-content;}
+
+a{text-decoration: none;
+color: black;}
+a:hover {
+    text-decoration:none;
+    color: red;
+    font-weight: bolder;
+
+}
