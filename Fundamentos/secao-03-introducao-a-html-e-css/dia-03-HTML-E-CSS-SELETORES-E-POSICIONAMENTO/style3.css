@@ -16,3 +16,12 @@ li em {font-weight: bolder;}
 
 .java-rosa {background-color: pink;
 width: fit-content;}
+
+a{text-decoration: none;
+color: black;}
+a:hover {
+    text-decoration:none;
+    color: red;
+    font-weight: bolder;
+
+}
