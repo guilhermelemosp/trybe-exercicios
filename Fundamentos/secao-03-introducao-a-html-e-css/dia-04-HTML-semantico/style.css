@@ -13,5 +13,10 @@
 
 .infos-add {float: right;
 clear: right;
-
+border: 2px solid #abb6ff;
+position: relative;
+bottom: 1200px;
+margin-right: 15px;
 }
+
+.juncao section {width: 250px; padding: 20px; font-size: 17px;}
