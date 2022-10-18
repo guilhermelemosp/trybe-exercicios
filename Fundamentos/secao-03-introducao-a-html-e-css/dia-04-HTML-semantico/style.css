@@ -3,3 +3,10 @@
     border: 1px solid red;
     display:inline;
 }
+
+.links-landpage a {
+    text-decoration: none;
+    color: black;
+}
+
+.links-landpage a:hover {color:blueviolet}
