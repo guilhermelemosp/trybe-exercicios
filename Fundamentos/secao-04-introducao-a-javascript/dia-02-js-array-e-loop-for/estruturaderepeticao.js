@@ -104,12 +104,21 @@ for (index = 0 ; index < valoresProdutos.length ; index = index +1) {
 
 console.log (somaTotal)*/
 
-let listaDeFrutas = ['banana', 'maçã', 'mamão', 'goiaba'];
+/*let listaDeFrutas = ['banana', 'maçã', 'mamão', 'goiaba'];
 
 listaDeFrutas.push = ('manga')
 
 for (index = 0 ; index <= listaDeFrutas.length ; index ++) {
 console.log(listaDeFrutas[index]);
 
-}
+}*/
 
+const frutas = ['banana', 'uva', 'pera', 'uva', 'maçã', 'uva'];
+  const frutasSelecionadas = [];
+
+  for (let index = 0; index < frutas.length; index = index + 1) {
+    if (frutas[index] === 'uva') {
+      frutasSelecionadas.push(frutas[index]);
+    }
+  }
+  console.log (frutasSelecionadas)
