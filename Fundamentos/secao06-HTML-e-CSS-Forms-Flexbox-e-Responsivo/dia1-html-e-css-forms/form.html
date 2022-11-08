@@ -1,0 +1,111 @@
+<!-- Exercícios - Criando um formulário para concorrer a uma viagem
+Imagine que você está surfando na internet. Você agora é uma pessoa desenvolvedora, cansada após finalmente terminar seus estudos e pensando nas suas maravilhosas e merecidas férias.
+
+Então você se depara com um anúncio do concurso TrybeTrip, que premia com uma viagem totalmente paga e com várias opções de destino. Como você imagina que seria a página para concorrer a essa viagem?
+
+Concorda que seria uma espécie de formulário?
+
+O exercício hoje será desenvolver uma página web com o formulário da TrybeTrip. Desenvolva-o em um arquivo chamado form.html. 
+
+O formulário deverá permitir que a pessoa usuária insira os seguintes campos:
+Nome Completo:
+Limitado entre 10 e 40 caracteres.
+
+E-mail:
+Limitado entre 10 e 50 caracteres.
+
+Destino Preferido:
+4 opções: Cidade, Campo, Praia, Montanhas.
+Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+
+Limite de 500 caracteres.
+Qual a melhor data para realizar sua viagem?
+
+Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+
+Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+
+Esses serão os principais campos utilizados nos próximos exercícios.
+
+Crie um botão para enviar as informações preenchidas.
+Agora vamos utilizar um pouco de javascript. Para isso, crie o arquivo script.js e o referencie no HTML.
+
+Dica: Coloque a tag <script> no final do seu body.
+Interrompa o comportamento padrão do botão submit utilizando o método preventDefault().
+
+Crie um botão que limpe as informações contidas nos campos.
+
+(Bônus) A TrybeTrip precisa muito de fotos para divulgar seus concursos. Tendo isso em mente, faça com que somente quem autorizar o uso de imagens possa enviar suas informações.
+
+(Bônus) Faça a validação dos campos com limite de caracteres. Caso não estejam dentro do esperado ao clicar no botão de submit, um alerta deve ser mostrado com a mensagem: ‘Dados Inválidos’. Caso contrário, a mensagem ‘Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.’ deverá aparecer na tela.
+
+Solução
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>Formulário para cadastro de currículo <h1>
+                <form>
+                    <fieldset>
+                        <label for="first-name">Nome Completo: </label>
+                        <input type="text" name="name" id="first-name" maxlength="40" minlength="10" required>
+
+                        <br>
+
+                        <label for="e-mail">Endereço de e-mail: </label>
+                        <input type="email" name="email" id="e-mail" maxlength="50" minlength="10" required>
+
+                        <br>
+
+                        <label for="destination1">Cidade</label>
+                        <input type="radio" name="radio" id="destination1">
+
+                        <label for="destination2">Campo</label>
+                        <input type="radio" name="radio" id="destination2">
+                        
+                        <label for="destination3">Praia</label>
+                        <input type="radio" name="radio" id="destination3">
+                        
+                        <label for="destination4">Montanhas</label>
+                        <input type="radio" name="radio" id="destination4">
+                        
+                        <br>
+
+                        <label for="why">Por que você deveria ser a pessoa desenvolvedora escolhida pelo concurso TrybeTrip? </label>
+                        <br />
+                        <textarea name="why" id="why" cols="60" rows="10" placeholder="Digite sua resposta vencedora aqui"></textarea>
+                        <br />
+
+                        <label for="date">Qual a melhor data para realizar sua viagem?</label>
+                        <input type="date" id="date">
+                        <br />
+
+                        <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe. </label>
+                        <input type="checkbox" name="promo" id="promo">
+                        <br />
+                        <label for="agreement">Concordo que imagens de minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                        <input type="checkbox" name="agreement" id="agreement" required>
+
+                
+
+                    </fieldset>
+                    <button type="submit" id="submit-btn">Participar do concurso TrybeTrip</button>
+                    <button type="button" id="clear-btn">Apagar informações</button>
+                </form>
+
+                <script src="form-script.js"></script>
+    </body>
+
+</html>
