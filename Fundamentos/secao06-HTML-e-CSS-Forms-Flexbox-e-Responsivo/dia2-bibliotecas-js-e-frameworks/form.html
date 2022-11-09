@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>Meu Formulário</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+    <header class="header-trybe">
+        <h1>TRYBE HOTEL</h1>
+        <br>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3q0v72AJA-p9V_oPst_65uEG9dr1WxKN-ZYp_5gE&s"
+            alt="logo Trybe">
+    </header>
+
+    <hr>
+
+    <form method="get">
+        <div class="form-floating mb-3">
+            <section class="hotel-form">
+                <label for="floatingInput">Check-in</label>
+                <input type="date" name="inputCheckin1" id="floatingInput" class="form-control">
+            </section>
+        </div>
+
+        <div class="form-floating">
+            <section class="hotel-form">
+                <label for="floatingInput1">Check-out</label>
+                <input type="date" name="inputCheckout1" id="floatingInput1" class="form-control">
+            </section>
+        </div>
+        <br>
+
+        <section class="hotel-form">
+            <p>Acomodação:</p>
+
+            <div class="form-check">
+                <input type="radio" name="bedroom" id="quarto1" class="form-check-input">
+                <label for="quarto1">Comum</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="bedroom" id="quarto2" class="form-check-input">
+                <label for="">Club</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="bedroom" id="quarto3" class="form-check-input">
+                <label for="">Luxo</label>
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="hotel-form">
+
+            <div class="form-floating">
+
+
+                <select name="quantidadePessoas" id="floatingSelect" class="form-select" required>
+                    <option value="1p">1</option>
+                    <option value="2p">2</option>
+                    <option value="3p">3</option>
+                    <option value="4p">4</option>
+                </select>
+                <label for="floatingSelect">Quantidade de Pessoas</label>
+
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="hotel-form">
+
+            <div class="form-floating">
+
+
+                <textarea name="observacoes" id="floatingTextarea2" style="height: 100px"
+                    placeholder="Digite aqui suas observações" class="form-control"></textarea>
+
+                <label for="floatingTextarea2">Observações</label>
+
+            </div>
+
+        </section>
+<br>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+
+
+
+
+    </form>
+</body>
+
+</html>
