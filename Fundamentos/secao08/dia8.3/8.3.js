@@ -66,7 +66,7 @@ const books = [
 
 //🚀 1 - Filtre todos os objetos do gênero ficção científica ou fantasia.
 
-const fantasyOrScienceFiction = () => books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
+const fantasyOrScienceFiction = books.filter((book) => book.genre === 'Fantasia' || book.genre === 'Ficção Científica');
 
 
 //🚀 2 - Filtre os livros com mais de 60 anos desde sua publicação e ordene a partir do livro mais velho para o mais novo.
@@ -90,8 +90,8 @@ const booksByAuthorBirthYear = (birthYear) => {
 
 const wantedGenres = ['Fantasia', 'Ficção Científica'];
 
-const fantasyOrScienceFictionAuthors = () => books.filter((book) => wantedGenres.includes(book.genre)).map((book) => book.author.name).sort();
-
+const fantasyOrScienceFictionAuthors = books.filter((book) => wantedGenres.includes(book.genre)).map((book) => book.author.name).sort();
+console.log(fantasyOrScienceFictionAuthors);
 
 //🚀 5 - Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
 
